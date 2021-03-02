@@ -25,3 +25,16 @@ input:focus {
 .toggleDisplay {
     display: none;
 }
+
+.author {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+.author a {
+    color: #198754;
+}
+.author a:hover {
+    color: #13613c;
+}
