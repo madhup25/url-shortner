@@ -1,6 +1,5 @@
 # url-shortner
 A simple url shortner. Create short urls here - [https://madhup-url-shortner.herokuapp.com/](https://madhup-url-shortner.herokuapp.com/)  
-
 ###### I know this makes it longer, not shorter.👽
 
 To setup the app on local, follow the below steps:
