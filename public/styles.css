@@ -26,12 +26,6 @@ input:focus {
     display: none;
 }
 
-.author {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-}
-
 .author a {
     color: #198754;
     text-decoration: underline;
