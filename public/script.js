@@ -28,11 +28,11 @@ function createUrl(e) {
                 success.classList.remove('toggleDisplay');
                 let url = window.location.href + data.slug;
                 success.innerHTML =
-                    'Link Created - <a href="' +
+                    '<span class="h6">Link Created</span> - <a href="' +
                     url +
-                    '" target="_blank">' +
+                    '" target="_blank"><pre>' +
                     url +
-                    '</a>';
+                    '</pre></a>';
             }
         })
         .catch((err) => console.log(err));

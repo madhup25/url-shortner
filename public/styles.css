@@ -34,7 +34,22 @@ input:focus {
 
 .author a {
     color: #198754;
+    text-decoration: underline;
 }
 .author a:hover {
     color: #13613c;
+}
+
+#success a {
+    color: #fff;
+    text-decoration: underline;
+
+}
+#success a:hover {
+    color: #198754
+}
+@media (max-width: 768px) {
+    .formdiv {
+        width: 80%;
+    }
 }
