@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="" type="image/jpg" sizes="16x16">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>url-shtnr</title>
+</head>
+<body class="bg-dark text-white">
+    <header class="container text-center">
+        <div style="height: 6rem;"></div>
+        <h1 class="display-2 text-success">url-shtnr</h1>
+        <h6>Create short urls.</h6>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row formdiv border border-2">
+            <div class="col-lg-12">
+                <form class="px-5 pt-5">
+                    <div class="row">
+                        <div class="col-lg-12 my-2">
+                            <label class="px-3 h5" for="url" class="text-left">Url *</label> <br>
+                            <input class="rounded-pill px-3" type="url" id="url" name="url" required autocomplete="off">
+                        </div>
+                        
+                        <div class="col-lg-12 my-2">
+                            <label class="px-3 h5" for="slug" class="text-left">Slug</label> <br>
+                            <input class="rounded-pill px-3" type="text" id="slug" name="slug" autocomplete="off">
+                        </div>
+
+                        <div class="col-lg-12 text-center mt-2">
+                            <button class="btn btn-success" type="submit">Submit!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-12 px-5 py-3" id="result">
+                <p class="h6 px-3 text-success toggleDisplay" id="success"></p>
+                <p class="h6 px-3 text-danger toggleDisplay" id="fail"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

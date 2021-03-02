@@ -1,0 +1,27 @@
+.formdiv {
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 12px 28px 0px,
+        rgba(0, 0, 0, 0.7) 0px 2px 4px 0px,
+        rgba(255, 255, 255, 0.6) 0px 0px 0px 1px inset;
+}
+
+input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+input:focus {
+    border: 1px solid #198754;
+    outline: -webkit-focus-ring-color auto 0;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 0;
+}
+
+.toggleDisplay {
+    display: none;
+}
