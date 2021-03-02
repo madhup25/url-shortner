@@ -42,8 +42,17 @@ input:focus {
 #success a:hover {
     color: #198754
 }
+
+footer {
+    text-align: right;
+}
+
 @media (max-width: 768px) {
     .formdiv {
         width: 80%;
+    }
+
+    footer {
+        text-align: center;
     }
 }
