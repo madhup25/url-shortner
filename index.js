@@ -82,7 +82,7 @@ app.get('/', (req, res) => {
     res.json({ message: 'Welcome to url-shortner' });
 });
 
-app.get('/:slug', async (req, res) => {
+app.get('/api/:slug', async (req, res) => {
     let { slug } = req.params;
     let existing = await URLS.findOne({ slug });
     if (!existing) {
@@ -94,7 +94,7 @@ app.get('/:slug', async (req, res) => {
     res.redirect(existing.url);
 });
 
-app.get('/url/:slug', async (req, res) => {
+app.get('/api/url/:slug', async (req, res) => {
     let { slug } = req.params;
     let existing = await URLS.findOne({ slug });
     if (!existing) {
@@ -107,7 +107,7 @@ app.get('/url/:slug', async (req, res) => {
 });
 
 // Create new short url
-app.post('/url', limiter, speedLimiter, async (req, res, next) => {
+app.post('/api/url', limiter, speedLimiter, async (req, res, next) => {
     console.log(req.body);
     let { slug, url } = req.body;
     slug = slug.trim();
