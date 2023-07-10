@@ -4,9 +4,9 @@
     "description": "",
     "main": "app.js",
     "scripts": {
-        "start": "node app.js",
+        "start": "node index.js",
         "dev": "nodemon",
-        "prod": "NODE_ENV=production node app.js"
+        "prod": "NODE_ENV=production node index.js"
     },
     "author": "",
     "license": "ISC",

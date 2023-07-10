@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express'),
     morgan = require('morgan'),
     helmet = require('helmet'),
@@ -9,8 +10,7 @@ const express = require('express'),
     rateLimit = require('express-rate-limit'),
     slowDown = require('express-slow-down'),
     port = process.env.PORT || 5000;
-
-require('dotenv').config();
+    
 
 // App Config and rate limit
 const app = express();
