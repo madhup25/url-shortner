@@ -6,7 +6,7 @@ function createUrl(e) {
     let url = document.getElementById('url');
     let slug = document.getElementById('slug');
 
-    fetch('/url', {
+    fetch('/api/url', {
         method: 'POST',
         headers: {
             'content-type': 'application/json',
