@@ -71,7 +71,7 @@ if (process.env.NODE_ENV !== 'production') {
     app.use(morgan('dev'));
 } else app.use(morgan('combined'));
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static('./public'));
 
 ///////////////////////
 // Routes
