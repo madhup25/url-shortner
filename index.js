@@ -78,7 +78,7 @@ app.use(express.static('./public'));
 ///////////////////////
 
 // Home
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.json({ message: 'Welcome to url-shortner' });
 });
 
